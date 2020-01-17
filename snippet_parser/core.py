@@ -174,7 +174,7 @@ class SnippetParser(object):
                     try:
                         section.replace(tpl, marked)
                         print(tpl)
-                        print type(tpl)
+                        print(type(tpl))
                     except ValueError:
                         # This seems to be caused by citation needed templates
                         # inside the parameters of other citation needed
