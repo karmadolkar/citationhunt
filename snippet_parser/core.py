@@ -173,8 +173,7 @@ class SnippetParser(object):
                     marked = _CITATION_NEEDED_MARKER_MARKUP.format(tpl = tpl)
                     try:
                         section.replace(tpl, marked)
-                        print(tpl)
-                        print(type(tpl))
+                        date=tpl.get(1).value
                     except ValueError:
                         # This seems to be caused by citation needed templates
                         # inside the parameters of other citation needed
